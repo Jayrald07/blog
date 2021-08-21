@@ -6,10 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Not Found | 404</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap" rel="stylesheet">
 </head>
+<style>
+    * {
+        font-family: Montserrat;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0
+    }
+
+    .page {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .page * {
+        align-self: center;
+    }
+
+    .page img {
+        width: 400px
+    }
+
+    .page h1 {
+        margin-top: 40px;
+        color: #454545;
+        font-size: 15pt;
+        font-weight: normal;
+    }
+
+    @media only screen and (max-width:763px) {
+        .page img {
+            width: 200px;
+        }
+
+        .page h1 {
+            font-size: 11pt;
+        }
+    }
+</style>
 
 <body>
-    <h1>Not Found</h1>
+    <div class="page">
+        <img src="assets/404.svg" />
+        <h1>We can't find your requested page</h1>
+    </div>
 </body>
 
 </html>
